@@ -1623,7 +1623,7 @@ endforeach
 
 with_gallium_drisw_kms = false
 dep_libdrm = dependency(
-  'libdrm', version : '>=' + _drm_ver,
+  'libdrm',
   # GNU/Hurd includes egl_dri2, without drm.
   required : (with_dri2 and host_machine.system() != 'gnu') or with_dri3
 )
