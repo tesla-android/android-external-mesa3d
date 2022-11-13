@@ -1,4 +1,4 @@
-# Mesa 3-D graphics library
+	# Mesa 3-D graphics library
 #
 # Copyright (C) 2021 GlobalLogic Ukraine
 # Copyright (C) 2021 Roman Stratiienko (r.stratiienko@gmail.com)
@@ -232,7 +232,7 @@ $(MESON_GEN_FILES_TARGET): $(sort $(shell find -L $(MESA3D_TOP) -not -path '*/\.
 		"cpp = [$(foreach arg,$(PRIVATE_CXX),'$(subst prebuilts/,$(AOSP_ABSOLUTE_PATH)/prebuilts/,$(arg))',)'']\n"        \
 		"c_ld = 'lld'\n"                                                                                                  \
 		"cpp_ld = 'lld'\n\n"                                                                                              \
-		"pkgconfig = ['env', 'PKG_CONFIG_LIBDIR=' + '$(AOSP_ABSOLUTE_PATH)/$(MESON_GEN_DIR)', '/usr/local/bin/pkg-config']\n\n" \
+		"pkgconfig = ['env', 'PKG_CONFIG_LIBDIR=' + '$(AOSP_ABSOLUTE_PATH)/$(MESON_GEN_DIR)', '/usr/bin/pkg-config']\n\n" \
 		"llvm-config = '/dev/null'\n"                                                                                     \
 		"[host_machine]\n"                                                                                                \
 		"system = 'linux'\n"                                                                                              \
